@@ -42,23 +42,23 @@ $(document).ready(function() {
 	});
 });
 
-$('#subscribe').submit(function() {
-	$.ajax({
-		url: 'inc/newsletter.php',
-		data: 'ajax=true&email=' + escape($('#subscribe-email').val()),
-		success: function(data) {
-			var data = jQuery.parseJSON(data);
-			if (data.success == 1) {
-				alertMessage(data.message, 'success');
-				$('#subscribe-submit').addClass('btn-green').val($('#subscribe-submit').data('done'));
-			}
-			else {
-				alertMessage(data.message, 'error');
-			}
-		}
-	});
-	return false;
-});
+// $('#subscribe').submit(function() {
+// 	$.ajax({
+// 		url: 'inc/newsletter.php',
+// 		data: 'ajax=true&email=' + escape($('#subscribe-email').val()),
+// 		success: function(data) {
+// 			var data = jQuery.parseJSON(data);
+// 			if (data.success == 1) {
+// 				alertMessage(data.message, 'success');
+// 				$('#subscribe-submit').addClass('btn-green').val($('#subscribe-submit').data('done'));
+// 			}
+// 			else {
+// 				alertMessage(data.message, 'error');
+// 			}
+// 		}
+// 	});
+// 	return false;
+// });
 
 function alertMessage(message, type) {
 	$bar = $('#alertbar');
@@ -87,3 +87,19 @@ $('body').on('click', '.close', function() {
 		$(this).remove();
 	});
 });
+
+jQuery(function($) {
+  $window = $(window);
+  $window.on('scroll', function(event) {
+    $wrap2 = $('#wrap2');
+
+    offset = 110;
+    if ($window.scrollTop() > offset) {
+      topPx = offset - $window.scrollTop();
+      $wrap2.css('background-position', 'right ' + topPx + 'px');
+    } else {
+      $wrap2.css('background-position', 'right 0px');
+    }
+  })
+});
+

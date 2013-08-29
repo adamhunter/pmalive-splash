@@ -281,6 +281,12 @@ html, body {
 	overflow: auto;
 	padding-bottom: 161px;
 }
+#wrap2 {
+  background-image: url('../img/pm-alive-4-color-xparent.png');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position: right 0px;
+}
 footer {
 	position: relative;
 	margin-top: -161px;
@@ -758,4 +764,9 @@ hr.divider-bottom {
 	.span1 {
 		width: 42px;
 	}
+}
+
+#no-spam {
+  color: #aaa;
+  margin-top:7px;
 }
