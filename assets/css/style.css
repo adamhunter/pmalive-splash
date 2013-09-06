@@ -347,7 +347,7 @@ h4 {
 .lead {
 	font-size: 24px;
 	font-weight: 300;
-	color: #999;
+	color: #111;
 }
 
 hr {
@@ -406,7 +406,7 @@ hr.divider-bottom {
 }
 
 #intro {
-	margin: 75px 0 100px;
+	margin: 75px 0 40px;
 	text-align: center;
 }
 
@@ -415,7 +415,7 @@ hr.divider-bottom {
 
 #countdown {
 	display: none;
-	margin-bottom: 75px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -437,7 +437,8 @@ hr.divider-bottom {
 	color: #feda71;
 }
 #sec-num {
-	color: #e7c4de;
+	/* color: #e7c4de; */
+  color: #e74f78;
 }
 
 #days-desc, #hours-desc, #min-desc, #sec-desc {
@@ -453,7 +454,8 @@ hr.divider-bottom {
 	color: #fdba4a;
 }
 #sec-desc {
-	color: #d095c2;
+	/* color: #d095c2; */
+  color: #d8476e;
 }
 
 /*	Progress bar
@@ -677,7 +679,7 @@ hr.divider-bottom {
 	.lead {
 		font-size: 18px;
 		font-weight: 300;
-		color: #999;
+		color: #111;
 	}
 	hr {
 		height: 50px;
@@ -769,4 +771,30 @@ hr.divider-bottom {
 #no-spam {
   color: #aaa;
   margin-top:7px;
+}
+
+.scripture {
+  color: #777;
+  text-align: center;
+}
+
+.scripture strong {
+  color: #777;
+}
+
+.scripture cite {
+  color: #555;
+}
+
+#fb-event {
+  text-align:center;
+}
+
+#fb-event a {
+  color: #1c1cae;
+}
+
+#directions {
+  margin-top: 40px;
+  text-align: center;
 }
