@@ -58,7 +58,7 @@
 			<div id="mode" data-mode="countdown">
 
 				<!-- Change data-date value to the date for the countdown (Year, month, day, hour, minute, second). The first two are required -->
-				<div id="countdown" class="row" data-date="2013, 09, 08, 18, 0, 0"></div>
+				<div id="countdown" class="row" data-date="2013, 10, 06, 17, 0, 0"></div>
 
 				<div id="progress" class="progressbar">
 					<!-- Or set your current progress in data-progress if you gave chosen the progress mode -->
@@ -141,13 +141,15 @@
 <script src="assets/js/custom.js"></script>
 
 <script>
-	// Replace this with your google analytics ID
-	var gaID = 'Your Google Analytics ID';
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+     Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	var _gaq=[['_setAccount',gaID],['_trackPageview']];
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	s.parentNode.insertBefore(g,s)}(document,'script'));
+  ga('create', 'UA-11991588-8', 'pmalive.com');
+    ga('send', 'pageview');
+
 </script>
 
 </body>
